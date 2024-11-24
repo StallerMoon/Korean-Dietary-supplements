@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корейские БАДы</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fef9f5;
+            color: #333;
+        }
+        header {
+            background-color: #ffe4c4;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            color: #8b4513;
+            font-size: 2.5em;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #8b4513;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .product {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .product p {
+            color: #777;
+            padding: 0 10px;
+        }
+        .product button {
+            background-color: #8b4513;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 0 0 8px 8px;
+        }
+        .product button:hover {
+            background-color: #a0522d;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #8b4513;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Корейские БАДы</h1>
+        <nav>
+            <a href="пробный.html">Главная</a>
+            <a href="пробныйjv.html">О нас</a>
+            <a href="contacts.html">Контакты</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Популярные продукты</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="путь_к_изображению1.jpg" alt="Продукт 1">
+                <h3>Продукт 1</h3>
+                <p>Описание продукта </p>
+                <button onclick="addToCart('Продукт 1')">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <img src="путь_к_изображению2.jpg" alt="Продукт 2">
+                <h3>Продукт 2</h3>
+                <p>Описание продукта </p>
+                <button onclick="addToCart('Продукт 2')">Добавить в корзину</button>
+            </div>
+            <div class="product">
+              <img src="путь_к_изображению3.jpg" alt="Продукт 1">
+              <h3>Продукт 3</h3>
+              <p>Описание продукта </p>
+              <button onclick="addToCart('Продукт 3')">Добавить в корзину</button>
+          </div>
+          <div class="product">
+            <img src="путь_к_изображению4.jpg" alt="Продукт 1">
+            <h3>Продукт 4</h3>
+            <p>Описание продукта </p>
+            <button onclick="addToCart('Продукт 4')">Добавить в корзину</button>
+        </div>
+        <div class="product">
+          <img src="путь_к_изображению5.jpg" alt="Продукт 1">
+          <h3>Продукт 5</h3>
+          <p>Описание продукта </p>
+          <button onclick="addToCart('Продукт 5')">Добавить в корзину</button>
+      </div>
+      <div class="product">
+        <img src="путь_к_изображению6.jpg" alt="Продукт 1">
+        <h3>Продукт 6</h3>
+        <p>Описание продукта </p>
+        <button onclick="addToCart('Продукт 6')">Добавить в корзину</button>
+    </div>
+    <div class="product">
+      <img src="путь_к_изображению7.jpg" alt="Продукт 1">
+      <h3>Продукт 7</h3>
+      <p>Описание продукта </p>
+      <button onclick="addToCart('Продукт 7')">Добавить в корзину</button>
+  </div>
+  <div class="product">
+    <img src="путь_к_изображению8.jpg" alt="Продукт 1">
+    <h3>Продукт 8</h3>
+    <p>Описание продукта </p>
+    <button onclick="addToCart('Продукт 8')">Добавить в корзину</button>
+</div>
+<div class="product">
+  <img src="путь_к_изображению9.jpg" alt="Продукт 1">
+  <h3>Продукт 9</h3>
+  <p>Описание продукта </p>
+  <button onclick="addToCart('Продукт 9')">Добавить в корзину</button>
+</div>
+<div class="product">
+  <img src="путь_к_изображению10.jpg" alt="Продукт 1">
+  <h3>Продукт 10</h3>
+  <p>Описание продукта </p>
+  <button onclick="addToCart('Продукт 10')">Добавить в корзину</button>
+</div>
+<div class="product">
+  <img src="путь_к_изображению11.jpg" alt="Продукт 1">
+  <h3>Продукт 11</h3>
+  <p>Описание продукта </p>
+  <button onclick="addToCart('Продукт 11')">Добавить в корзину</button>
+</div>
+<div class="product">
+  <img src="путь_к_изображению12.jpg" alt="Продукт 1">
+  <h3>Продукт 12</h3>
+  <p>Описание продукта </p>
+  <button onclick="addToCart('Продукт 12')">Добавить в корзину</button>
+</div>
+<div class="product">
+  <img src="путь_к_изображению13.jpg" alt="Продукт 1">
+  <h3>Продукт 13</h3>
+  <p>Описание продукта </p>
+  <button onclick="addToCart('Продукт 13')">Добавить в корзину</button>
+</div>
+<div class="product">
+  <img src="путь_к_изображению14.jpg" alt="Продукт 1">
+  <h3>Продукт 14</h3>
+  <p>Описание продукта </p>
+  <button onclick="addToCart('Продукт 14')">Добавить в корзину</button>
+</div>
+<div class="product">
+  <img src="путь_к_изображению15.jpg" alt="Продукт 1">
+  <h3>Продукт 15</h3>
+  <p>Описание продукта </p>
+  <button onclick="addToCart('Продукт 15')">Добавить в корзину</button>
+</div>
+<div class="product">
+  <img src="путь_к_изображению16.jpg" alt="Продукт 1">
+  <h3>Продукт 16</h3>
+  <p>Описание продукта </p>
+  <button onclick="addToCart('Продукт 16')">Добавить в корзину</button>
+</div>
+<div class="product">
+  <img src="путь_к_изображению17.jpg" alt="Продукт 1">
+  <h3>Продукт 17</h3>
+  <p>Описание продукта </p>
+  <button onclick="addToCart('Продукт 17')">Добавить в корзину</button>
+</div>
+<div class="product">
+  <img src="путь_к_изображению18.jpg" alt="Продукт 1">
+  <h3>Продукт 18</h3>
+  <p>Описание продукта </p>
+  <button onclick="addToCart('Продукт 18')">Добавить в корзину</button>
+</div>
+<div class="product">
+  <img src="путь_к_изображению19.jpg" alt="Продукт 1">
+  <h3>Продукт 19</h3>
+  <p>Описание продукта </p>
+  <button onclick="addToCart('Продукт 19')">Добавить в корзину</button>
+</div>
+<div class="product">
+  <img src="путь_к_изображению20.jpg" alt="Продукт 1">
+  <h3>Продукт 20</h3>
+  <p>Описание продукта </p>
+  <button onclick="addToCart('Продукт 20')">Добавить в корзину</button>
+</div>
+<div class="product">
+  <img src="путь_к_изображению21.jpg" alt="Продукт 1">
+  <h3>Продукт 21</h3>
+  <p>Описание продукта </p>
+  <button onclick="addToCart('Продукт 21')">Добавить в корзину</button>
+</div>
+<div class="product">
+  <img src="путь_к_изображению22.jpg" alt="Продукт 1">
+  <h3>Продукт 22</h3>
+  <p>Описание продукта</p>
+  <button onclick="addToCart('Продукт 22')">Добавить в корзину</button>
+</div>
+<div class="product">
+  <img src="путь_к_изображению23.jpg" alt="Продукт 1">
+  <h3>Продукт 23</h3>
+  <p>Описание продукта </p>
+  <button onclick="addToCart('Продукт 23')">Добавить в корзину</button>
+</div>
+<div class="product">
+  <img src="путь_к_изображению24.jpg" alt="Продукт 1">
+  <h3>Продукт 24</h3>
+  <p>Описание продукта </p>
+  <button onclick="addToCart('Продукт 24')">Добавить в корзину</button>
+</div>
+        </div>
+    </main>
+    <footer>
+        © 2024 Корейские БАДы. Все права защищены.
+    </footer>
+    <script>
+        function addToCart(product) {
+            alert(${product} добавлен в корзину!);
+        }
+    </script>
+</body>
+</html>
